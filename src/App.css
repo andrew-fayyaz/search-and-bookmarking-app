@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #24305E;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+.set-position {
+  z-index: 6;
+  top: 3px;
+  left: 0;
+}
+
+.list-group-item {
+  background-color: #A8D0E6;
+  color: #24305E;
+}
+
+.list-group-item+.list-group-item {
+  border-top-width: thin;
+}
+
+.favorite-btn {
+  z-index: 1;
+}
+
+.favorite-btn svg:hover {
+  fill: #ff0000;
+  stroke: #ff0000;
+}
+
+.fav-col {
+  border-color: #A8D0E6 !important;
+  height: min-content;
+}
+
+.pagination .active .btn-light {
+  background-color: #A8D0E6;
+  color: #24305E;
+  font-weight: 600;
+}
+
+.disabled .btn {
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.65;
+}
